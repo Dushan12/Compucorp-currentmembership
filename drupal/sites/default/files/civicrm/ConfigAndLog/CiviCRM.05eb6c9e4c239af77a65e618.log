@@ -1,0 +1,58 @@
+Oct 05 12:16:02  [info] Creating canary table
+
+Oct 05 12:16:24  [info] $Fatal Error Details = Array
+(
+    [message] => Cannot install this extension - curl is not installed!
+    [code] => 
+)
+
+
+Oct 05 12:16:24  [info] $backTrace = #0 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Core/Error.php(376): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Utils/HttpClient.php(85): CRM_Core_Error::fatal("Cannot install this extension - curl is not installed!")
+#2 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Extension/Browser.php(251): CRM_Utils_HttpClient->fetch("https://civicrm.org/extdir/ver=4.7.12|cms=Drupal/single", "/home/dushan/Compucorp/web/drupal/sites/default/files/civicrm/ext/cache/exten...")
+#3 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Extension/Browser.php(193): CRM_Extension_Browser->grabRemoteJson()
+#4 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Extension/Browser.php(148): CRM_Extension_Browser->_discoverRemote()
+#5 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Utils/Check/Component/Env.php(467): CRM_Extension_Browser->getExtensions()
+#6 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Utils/Check/Component.php(54): CRM_Utils_Check_Component_Env->checkExtensions()
+#7 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Utils/Check.php(209): CRM_Utils_Check_Component->checkAll()
+#8 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Utils/Check.php(93): CRM_Utils_Check::checkAll()
+#9 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Core/Page.php(218): CRM_Utils_Check->showPeriodicAlerts()
+#10 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Admin/Page/ConfigTaskList.php(59): CRM_Core_Page->run()
+#11 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Core/Invoke.php(312): CRM_Admin_Page_ConfigTaskList->run((Array:3), NULL)
+#12 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Core/Invoke.php(86): CRM_Core_Invoke::runItem((Array:14))
+#13 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Core/Invoke.php(54): CRM_Core_Invoke::_invoke((Array:3))
+#14 /home/dushan/Compucorp/web/drupal/modules/civicrm/drupal/civicrm.module(448): CRM_Core_Invoke::invoke((Array:3))
+#15 [internal function](): civicrm_invoke("admin", "configtask")
+#16 /home/dushan/Compucorp/web/drupal/includes/menu.inc(527): call_user_func_array("civicrm_invoke", (Array:2))
+#17 /home/dushan/Compucorp/web/drupal/index.php(21): menu_execute_active_handler()
+#18 {main}
+
+
+Oct 05 12:27:11  [info] $Fatal Error Details = Array
+(
+    [message] => Cannot install this extension - curl is not installed!
+    [code] => 
+)
+
+
+Oct 05 12:27:11  [info] $backTrace = #0 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Core/Error.php(376): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Utils/HttpClient.php(85): CRM_Core_Error::fatal("Cannot install this extension - curl is not installed!")
+#2 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Extension/Browser.php(251): CRM_Utils_HttpClient->fetch("https://civicrm.org/extdir/ver=4.7.12|cms=Drupal/single", "/home/dushan/Compucorp/web/drupal/sites/default/files/civicrm/ext/cache/exten...")
+#3 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Extension/Browser.php(193): CRM_Extension_Browser->grabRemoteJson()
+#4 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Extension/Browser.php(148): CRM_Extension_Browser->_discoverRemote()
+#5 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Utils/Check/Component/Env.php(467): CRM_Extension_Browser->getExtensions()
+#6 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Utils/Check/Component.php(54): CRM_Utils_Check_Component_Env->checkExtensions()
+#7 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Utils/Check.php(209): CRM_Utils_Check_Component->checkAll()
+#8 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Utils/Check.php(93): CRM_Utils_Check::checkAll()
+#9 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Core/Page.php(218): CRM_Utils_Check->showPeriodicAlerts()
+#10 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Contact/Page/DashBoard.php(70): CRM_Core_Page->run()
+#11 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Core/Invoke.php(312): CRM_Contact_Page_DashBoard->run((Array:2), NULL)
+#12 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Core/Invoke.php(86): CRM_Core_Invoke::runItem((Array:13))
+#13 /home/dushan/Compucorp/web/drupal/modules/civicrm/CRM/Core/Invoke.php(54): CRM_Core_Invoke::_invoke((Array:2))
+#14 /home/dushan/Compucorp/web/drupal/modules/civicrm/drupal/civicrm.module(448): CRM_Core_Invoke::invoke((Array:2))
+#15 [internal function](): civicrm_invoke("dashboard")
+#16 /home/dushan/Compucorp/web/drupal/includes/menu.inc(527): call_user_func_array("civicrm_invoke", (Array:1))
+#17 /home/dushan/Compucorp/web/drupal/index.php(21): menu_execute_active_handler()
+#18 {main}
+
+

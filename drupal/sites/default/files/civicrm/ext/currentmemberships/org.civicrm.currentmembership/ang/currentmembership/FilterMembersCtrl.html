@@ -1,0 +1,84 @@
+<div class="crm-container">
+  <div crm-ui-debug="myContact"></div>
+
+  <form name="myForm" crm-ui-id-scope>
+
+    <div class="help">
+      <p>{{ts('This is an auto-generated skeletal page.')}}</p>
+
+      <p>{{ts('To view more debugging information, edit the URL and include "?angularDebug=1".')}}</p>
+    </div>
+
+    <div crm-ui-accordion="{title: ts('Greeting')}">
+      <p ng-show="myContact.first_name">{{ ts('Hello, %1.', {1: myContact.first_name}) }}</p>
+
+      <p ng-show="!myContact.first_name">{{ ts('Hello, stranger.') }}</p>
+    </div>
+
+    <div crm-ui-accordion="{title: ts('About Me')}">
+      <!--<div class="crm-block">
+        <div class="crm-group">
+          <div crm-ui-field="{name: 'myForm.first_name', title: ts('Name'), help: hs('full_name')}">
+            <input
+              crm-ui-id="myForm.first_name"
+              name="first_name"
+              ng-model="myContact.first_name"
+              class="crm-form-text"
+              placeholder="{{ts('First')}}"
+              />
+            <input
+              crm-ui-id="myForm.last_name"
+              name="last_name"
+              ng-model="myContact.last_name"
+              class="crm-form-text"
+              placeholder="{{ts('Last')}}"
+              />
+            <input
+              crm-ui-id="myForm.email"
+              name="email"
+              ng-model="myContact.email"
+              class="crm-form-text"
+              placeholder="{{ts('email')}}"
+              />
+          </div>
+        </div>
+      </div>-->
+
+        <div class="crm-group">
+          <input crm-ui-datepicker="{time: false}" ng-model="filter.datefrom"/>
+          <input crm-ui-datepicker="{time: false}" ng-model="filter.dateto"/>
+          <table class="border_table">
+            <tr>
+              <td>
+                Membership name
+              </td>
+              <td>
+                Relationship name
+              </td>
+              <td>
+                Start date
+              </td>
+            </tr>
+            <tr ng-repeat="membership in memberships | dateInRange:filter.datefrom:filter.dateto">
+              <td>
+                {{ membership.membership_name }}
+              </td>
+              <td>
+                {{ membership.relationship_name }}                
+              </td>
+              <td>
+                {{ membership.start_date }}                
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <button ng-click="save()">{{ts('Save')}}</button>
+      </div>
+    </div>
+
+  </form>
+
+</div>

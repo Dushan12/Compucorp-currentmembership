@@ -1,0 +1,12 @@
+/* Add any CSS rules for Angular module "currentmembership" */
+.border_table {
+   border: 2px solid #e6e6e6 !important;
+}
+
+.border_table tr {
+   border: 2px solid #e6e6e6 !important;
+}
+
+.border_table td {
+   border: 2px solid #e6e6e6 !important;
+}
