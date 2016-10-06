@@ -15,4 +15,5 @@
 .border_table th {
    border: 2px solid #e6e6e6 !important;
    background-color:#e6e6e6;
+   color:black;
 }

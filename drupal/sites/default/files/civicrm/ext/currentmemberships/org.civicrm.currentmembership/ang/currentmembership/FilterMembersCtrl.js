@@ -33,19 +33,7 @@
     }, function(reason) {
       $scope.error = "Failed to load memberships: Reason - " + reason
     });
-
-    $scope.save = function save() {
-      return crmStatus(
-        // Status messages. For defaults, just use "{}"
-        {start: ts('Saving...'), success: ts('Saved')},
-        // The save action. Note that crmApi() returns a promise.
-        crmApi('Contact', 'create', {
-          id: myContact.id,
-          first_name: myContact.first_name,
-          last_name: myContact.last_name
-        })
-      );
-    };
+    
   }]);
 
   module.factory('membersFactory', ['$http', '$q', 'crmApi', function($http, $q, crmApi) {
